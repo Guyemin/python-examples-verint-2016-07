@@ -1,5 +1,8 @@
-"""
-Write a program that reads 10 numbers from
-the user and prints the largest one
-"""
+print "Please write 10 numbers"
 
+high = int(raw_input())
+for i in range (1,10):
+	number = int(raw_input())
+	if number > high:
+		high = number
+print "The highest number is:%s" % high
