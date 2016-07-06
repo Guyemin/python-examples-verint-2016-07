@@ -1,4 +1,6 @@
-""" Write a program that takes a count
-from sys.argv import and prints "Hello Python"
-count times
-"""
+import sys
+index = 0
+max = int(sys.argv[1])
+while index < max:
+	print "Hello Python"
+	index = index + 1
