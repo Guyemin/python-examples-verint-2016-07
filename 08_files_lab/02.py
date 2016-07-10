@@ -1,7 +1,13 @@
-"""
-Write a program that takes 3 names. The first two
-are existing file names and the last is a new file name
-Program should write the lines from the first two 
-files interwinded into the output file
-"""
+import sys
 
+a= sys.argv[1]
+b= sys.argv[2]
+c= sys.argv[3]
+with open (c, "w") as ccin:
+	with open (a, "r") as aain:
+		for line in aain:
+			c = ccin.write(line)
+		c = ccin.write("\n")
+		with open (b, "r") as bbin:
+			for line in bbin:
+				c = ccin.write(line)
