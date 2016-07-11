@@ -1,10 +1,5 @@
-"""
-Write a program that takes two strings
-from the user and checks if they represent
-a valid user name.
-Valid users and passwords:
-    apple => red
-    lettuce => green
-    lemon => yellow
-    orange => orange
-"""
+import sys
+ip= {'work':'10.0.0.2', 'router':'10.0.0.1', 'mycard': '10.0.0.5', 'router':'10.0.60.6'}
+for arg in sys.argv:
+	if arg in ip:
+		print ip[arg]
