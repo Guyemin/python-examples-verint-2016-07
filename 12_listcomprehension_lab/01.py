@@ -1,8 +1,6 @@
-"""
-Use range() and list comprehension to get
-the list of all lowercase english letters
-Hint: look for chr() and ord()
-"""
-
-
-
+import sys 
+import os
+array = []
+list_ascii = range(97, 123)
+for i in list_ascii:
+	print chr(i)
